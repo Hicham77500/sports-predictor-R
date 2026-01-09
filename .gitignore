@@ -1,0 +1,56 @@
+# R history & workspace
+.Rhistory
+.Rapp.history
+.RData
+.Rproj.user/
+*.Rproj
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.env.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# R environment
+.Renviron
+renv/library/
+renv/python/
+renv.lock
+
+# R packages
+*.tar.gz
+*.zip
+
+# Models and outputs (optional - commenter si vous voulez les versionner)
+# models/
+# predictions/
+
+# Data raw (keeper les données traitées)
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/*.md
+data/processed/*
+!data/processed/.gitkeep
+
+# Shiny and API logs
+shiny-app/logs/
+shiny-app/rsconnect/
+api/*.log
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# Package builds
+*.Rcheck/
+src/*.o
+src/*.so
+src/*.dll

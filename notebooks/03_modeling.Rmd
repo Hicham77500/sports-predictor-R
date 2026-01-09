@@ -1,0 +1,29 @@
+---
+title: "03 - Modeling"
+output: html_document
+---
+
+# Objectifs
+- Comparer plusieurs modeles de classification.
+- Selectionner le meilleur et le sauvegarder.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(caret)
+source("../R/train_model.R")
+source("../R/preprocess.R")
+```
+
+## Preparation des donnees
+```{r data}
+raw_df <- readr::read_csv("data/raw/matches.csv", show_col_types = FALSE)
+processed_df <- preprocess_matches(raw_df)
+```
+
+## Entrainement
+```{r train}
+model <- train_outcome_model(processed_df)
+model
+save_model(model)
+```

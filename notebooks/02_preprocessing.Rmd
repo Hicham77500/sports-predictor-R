@@ -1,0 +1,21 @@
+---
+title: "02 - Preprocessing"
+output: html_document
+---
+
+# Objectifs
+- Nettoyage, normalisation, encoding des variables.
+- Feature engineering (formes recentes, elo simple, etc.).
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+source("../R/preprocess.R")
+```
+
+## Chargement et pretraitement
+```{r preprocess}
+raw_df <- readr::read_csv("data/raw/matches.csv", show_col_types = FALSE)
+processed_df <- preprocess_matches(raw_df)
+glimpse(processed_df)
+```

@@ -1,0 +1,20 @@
+title: "01 - Exploration des donnees"
+output: html_document
+---
+
+# Objectifs
+- Decrire le dataset: dimensions, colonnes, valeurs manquantes.
+- Visualiser les distributions cles (scores, dates, equipes).
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+source("../R/fetch_data.R")
+```
+
+## Chargement des donnees
+```{r load-data}
+raw <- fetch_matches_data()
+glimpse(raw)
+summary(raw)
+```

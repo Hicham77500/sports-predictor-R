@@ -136,4 +136,4 @@ Rscript R/evaluate_model.R
 - quickstart.sh — menu interactif (entraînement, API, Shiny, figures)
 
 ## Licence
-MIT (adapter si besoin)
+MIT

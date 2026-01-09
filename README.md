@@ -1,5 +1,10 @@
 # Sports Predictor (R) ⚽
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![R version](https://img.shields.io/badge/R%3E%3D-4.2-brightgreen)](https://www.r-project.org/)
+[![Author](https://img.shields.io/badge/Author-Hicham%20Guendouz-orange)](https://github.com)
+[![Status](https://img.shields.io/badge/Status-Active-success)](README.md)
+
 Système complet de prédiction de résultats de matchs de football utilisant les **Elo ratings** et le **machine learning**.
 
 Prédiction des résultats H/D/A (Victoire domicile / Match nul / Victoire extérieur) avec un pipeline R complet : préparation des données, calcul des Elo ratings dynamiques, entraînement de modèles caret, API REST plumber et interface Shiny interactive.

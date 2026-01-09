@@ -1,0 +1,32 @@
+title: Sports Predictor
+description: Machine Learning model for football match outcome prediction using Elo ratings
+author: Hicham Guendouz
+logo: https://via.placeholder.com/200?text=Sports+Predictor
+show_downloads: true
+google_analytics: 
+
+theme: jekyll-theme-minimal
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - .gitattributes
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .github/
+  - data/raw/
+  - data/processed/
+  - shiny-app/rsconnect/
+  - renv/
